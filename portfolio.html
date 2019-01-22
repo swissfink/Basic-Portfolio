@@ -4,48 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Porfolio</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
 </head>
 
 <body>
 
     <header>
-
+        <div id="name">Richard Fink</div>
         <nav>
             <ul>
-                <li style="float:left" id="name"><a class="active" href="index.html">Richard Fink</a></li>
-                <li id="nav-bits"><a href="contact.html">Contact</a></li>
-                <li id="nav-bits"><a href="#">|</a></li>
-                <li id="nav-bits"><a href="portfolio.html">Portfolio</a></li>
-                <li id="nav-bits"><a href="#">|</a></li>
-                <li id="nav-bits"><a href="index.html">About</a></li>             
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="index.html">About</a></li>             
             </ul>
         </nav>
-
     </header>
 
-    <div class="container">
+    <div class="portfolio-container">
 
-        <section id="main-bio">
-
-        <h2>Portfolio</h2>
+        <h2 id="page-title">Portfolio</h2>
 
         <hr>
 
-        <img id="folio-image-1" src="/assets/images/EHEA_featured image copy.png" alt="East Hills Engineering Associates Website">
+        <div id="row-1">
+            <img id="folio-image-5" src="/assets/images/PI-Featured-Image copy.png" alt="Practical Inventions Logo">
+            <img id="folio-image-2" src="/assets/images/griffith-brochure-featured-image copy.png" alt="Griffith Family Foundation Brochure">
+        </div>
 
-        <img id="folio-image-2" src="/assets/images/griffith-brochure-featured-image copy.png" alt="Griffith Family Foundation Brochure">
+        <div id="row-2">
+            <img id="folio-image-3" src="/assets/images/jmg-xmas-card-2018 copy.png" alt="JMG Christmas Card">
+            <img id="folio-image-4" src="/assets/images/lytle-print-feature-image copy.png" alt="Lytle EAP Graphic">
+        </div>
 
-        <img id="folio-image-3" src="/assets/images/jmg-xmas-card-2018 copy.png" alt="JMG Christmas Card">
-
-        <img id="folio-image-4" src="/assets/images/lytle-print-feature-image copy.png" alt="Lytle EAP Graphic">
-
-        <img id="folio-image-5" src="/assets/images/PI-Featured-Image copy.png" alt="Practical Inventions Logo">
-
-        </section>
+        <div id="row-3">
+            <img id="folio-image-1" src="/assets/images/EHEA_featured image copy.png" alt="East Hills Engineering Associates Website">
+        </div>
         
     </div>
     

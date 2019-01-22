@@ -12,16 +12,23 @@ p {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-header {
-    background-color: #ffffff;
-    border-bottom: #000;
-}
 
+/* navigation bar */
 
-/* navigation */
 
 nav {
-    margin: 0 auto;
+    background-color: white;
+    border-bottom: 1px solid #999;
+}
+
+#name {
+    float:left;
+    background-color: #4aaaa5; 
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
 }
 
 ul {
@@ -33,41 +40,31 @@ ul {
 
 li {
     float: right;
+    padding-top: 30px;
+    position: relative;
+    right: 100px;
+
 }
   
 li a {
     display: block;
-    color: #666;
+    font-size: 14px;
+    color: #999;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-#nav-bits {
-    margin-top: 30px;
-    margin-right: 30px;
-}
-  
-/* Change the link color to #111 (black) on hover */
-  
+ 
 li a:hover {
     background-color: #4aaaa5;
     color: #fff;
 }
 
-.active {
+li:active {
     color: #fff;
+    background-color: #4aaaa5;
   }
-
-#name {
-    float:left;
-    background-color: #4aaaa5; 
-    color: #fff;
-    margin: 0;
-    /* margin-left: 165px; */
-    padding: 20px;
-    font-size: 30px;
-}
 
 #page-title {
     color: #4aaaa5;
@@ -81,9 +78,9 @@ body {
 }
 
 hr {
-    border-top: 2px solid #777777;
+    border-top: 2px solid #efefef;
 }
-.container {
+.about-container {
     width: 960px;
     margin: 0 auto;
     background-color: #fff;
@@ -92,9 +89,30 @@ hr {
     padding: 20px 20px 20px 20px;
     line-height: 1.5em;
     border: 1px solid #dddddd;
-    
 }
 
+.portfolio-container {
+    width: 960px;
+    height: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.5em;
+    border: 1px solid #dddddd; 
+}
+
+.contact-container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.5em;
+    border: 1px solid #dddddd; 
+}
 
 footer {
     clear: both;
@@ -106,7 +124,7 @@ footer {
     padding: 10px 0 .5px 0;
     }
 
-/* home page */
+/* About page */
 
 #bio-image {
 
@@ -116,4 +134,45 @@ footer {
 
 #main-bio {
     padding-top: 20px;
+}
+
+
+/* Portolfio page */
+
+#row-1 {
+    margin-bottom: 20px;
+}
+
+#folio-image-5 {
+    float: left;
+    width: 50%;
+}
+
+#folio-image-2 {
+    float: left;
+    width: 50%;
+}
+
+#row-2 {
+    clear: both;
+}
+
+#folio-image-3 {
+    float: left;
+    width: 50%;
+}
+
+#folio-image-4 {
+    float: left;
+    width: 50%;
+}
+
+#row-3 {
+    clear: both;
+    margin-top: 15px;
+}
+
+#folio-image-1 {
+    float: left;
+    width: 100%;
 }
