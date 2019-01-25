@@ -72,23 +72,34 @@ li a {
     font-size: 14px;
     color: #999;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
+    margin: 0 8px 0 8px;
     text-decoration: none;
 }
  
 li a:hover {
     background-color: #4aaaa5;
     color: #fff;
+    border: 1px 1px 0 1px solid #4aaaa5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 li:active {
-    color: #fff;
     background-color: #4aaaa5;
-  }
+    color: #fff;    
+}
 
-.divider {
-    margin-top: 12px;
-    color: #eee;
+li::before {
+    content: "|";
+    color: #999;
+    position: absolute;    
+    margin-top: 13px;
+    padding: 0;
+  }
+ 
+li:last-child::before { 
+    display: none; 
 }
 
 
@@ -119,8 +130,8 @@ body {
     margin: 0 auto;
     background-color: #fff;
     margin-top: 25px;
-    margin-bottom: 50px;
-    padding: 20px 20px 20px 20px;
+    margin-bottom: 100px;
+    padding: 20px 20px 40px 20px;
     line-height: 1.5em;
     border: 1px solid #dddddd; 
 }
@@ -132,7 +143,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding: 20px 20px 20px 20px;
     line-height: 1.5em;
     border: 1px solid #dddddd; 
@@ -144,6 +155,10 @@ body {
 
 footer {
     clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
     border-top: 5px solid #4aaaa5;
     background-color: #666666;    
     color:#cccccc;
@@ -159,6 +174,7 @@ footer {
 #bio-image {
     float:left;
     margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #bio-image:hover {
@@ -170,11 +186,11 @@ footer {
 
 .row {
     clear: both;
+    padding-top: 20px;
 }
 
 .portfolio-item {
     position: relative; 
-
 }
 
 #image-5 {
@@ -182,6 +198,8 @@ footer {
     float: left;
     width: 48%;
     z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #desc-5 {
@@ -201,14 +219,16 @@ footer {
     float: right;
     width: 48%;
     z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #desc-2 {
     float: right;
-    width: 45.9%;
+    width: 46%;
     position: relative;
     top: 150px;
-    left: 460px;
+    left: 461px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -221,14 +241,14 @@ footer {
     float: left;
     width: 48%;
     z-index: 1;
-    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #desc-3 {
     float: left;
     width: 45.9%;
     position: absolute;
-    top: 170px;
+    top: 150px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -241,7 +261,7 @@ footer {
     float: right;
     width: 48%;
     z-index: 1;
-    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #desc-4 {
@@ -261,14 +281,15 @@ footer {
     float: right;
     width: 100%;
     z-index: 1;
-    margin-top: -20px;
+    margin-top: -40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #desc-1 {
     float: left;
     width: 97.9%;
     position: relative;
-    top: 350px;
+    top: 340px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
