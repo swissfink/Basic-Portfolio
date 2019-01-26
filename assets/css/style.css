@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+  }
+
 h1,
 h2,
 h3,
@@ -42,7 +46,7 @@ header {
 
 
 nav {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -140,16 +144,15 @@ body {
 
 .portfolio-container {
     width: 960px;
-    height: 990px;
+    height: 1010px;
     margin: 0 auto;
     background-color: #fff;
     margin-top: 25px;
     margin-bottom: 100px;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 20px 20px;
     line-height: 1.5em;
     border: 1px solid #dddddd; 
 }
-
 
 .row {
     clear: both;
@@ -170,7 +173,7 @@ body {
 
 #desc-1 {
     float: left;
-    width: 45.9%;
+    width: 48%;
     position: absolute;
     top: 150px;
     background-color: #4aaaa5;
@@ -194,10 +197,10 @@ body {
 
 #desc-2 {
     float: right;
-    width: 46%;
+    width: 48.1%;
     position: relative;
     top: 150px;
-    left: 461px;
+    left: 441px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -219,7 +222,7 @@ body {
 
 #desc-3 {
     float: left;
-    width: 45.9%;
+    width: 48%;
     position: absolute;
     top: 150px;
     background-color: #4aaaa5;
@@ -243,9 +246,9 @@ body {
 
 #desc-4 {
     float: right;
-    width: 45.9%;
+    width: 48%;
     position: relative;
-    top: -60px;
+    top: -52px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -268,9 +271,9 @@ body {
 
 #desc-5 {
     float: left;
-    width: 97.9%;
+    width:100%;
     position: relative;
-    top: 340px;
+    top: 315px;
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
